@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصفح صفحات القرآن الكريم</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبا بك! إدخل رقم الصفحة</h1>
+        <input type="number" id="pageNumber" placeholder="أدخل رقم الصفحة" />
+        <button onclick="loadPage()">عرض الصفحة</button>
+        <div id="pageImageContainer"></div>
+        <div class="controls">
+            <button onclick="navigatePage(-1)">صفحة سابقة</button>
+            <button onclick="navigatePage(1)">صفحة التالية</button>
+        </div>
+        <!-- أزرار الفهرس والمطور أسفل الصفحة -->
+        <div class="bottom-buttons">
+            <button onclick="openIndex()">الفهرس</button>
+            <button onclick="openDeveloperInfo()">صفحة المطور</button>
+            <button 
+onclick="tspehat()">التسبيح</button>           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
