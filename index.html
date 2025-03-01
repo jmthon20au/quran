@@ -18,7 +18,15 @@
         </div>
         <!-- أزرار الفهرس والمطور أسفل الصفحة -->
         <div class="bottom-buttons">
-            <button onclick="openIndex()">الفهرس</button>
+       <button onclick="openIndex()">عرض الفهرس</button>
+
+<!-- نافذة منبثقة لعرض الفهرس -->
+<div id="indexModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>فهرس القرآن الكريم</h2>
+        <div id="indexContent"></div>
+
             <button onclick="openDeveloperInfo()">صفحة المطور</button>
             <button 
 onclick="tspehat()">التسبيح</button>           
